@@ -1,15 +1,37 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using Test_Mandiri;
+using Test_Mandiri.Controllers.v1;
 using Test_Mandiri.IService;
 using Test_Mandiri.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var httpsPort = builder.Configuration.GetValue<int>("HttpsPort", 443);
 
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("EfPostgresDb"));
 
 });
+
+builder.Services.Configure<RouteOptions>(options =>
+{
+    options.ConstraintMap["apiVersion"] = typeof(ApiVersionRouteConstraint);
+});
+
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.HttpsPort = httpsPort;
+});
+
+// builder.Services.AddApiVersioning(options =>
+// {
+//     options.ReportApiVersions = true;
+//     options.AssumeDefaultVersionWhenUnspecified = true;
+//     options.Conventions.Controller<OrderController>().HasApiVersion(new ApiVersion(1, 0));
+// });
 
 // Add services to the container.
 

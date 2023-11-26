@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj": {}
+    "c:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj": {
+    "c:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj",
+        "projectUniqueName": "c:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj",
         "projectName": "Test_Mandiri",
-        "projectPath": "C:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj",
+        "projectPath": "c:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\Test_Mandiri.csproj",
         "packagesPath": "C:\\Users\\ARY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\obj\\",
+        "outputPath": "c:\\Users\\ARY\\Documents\\Project\\Test\\TestMandiry-TicketAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ARY\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.1.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
